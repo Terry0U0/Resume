@@ -1,19 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>He Jiarui | Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-+<!DOCTYPE html>
- <html lang="en" style="width:100%; height:100%;">
- <head>
--  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-+  <meta charset="utf-8">
-   <title>kekayan's Resume</title>
- </head>
--  <body style="width:100%; height:100%; margin:0;">
--    <iframe src="https://github.com/Terry0U0/Resume/blob/main/He%2CJiarui_CV_2026.pdf" style="width:100%; height:100%;" frameborder="0"></iframe>
--  </body>
-+<body style="width:100%; height:100%; margin:0;">
-+  <p style="margin: 1em;">
-+    <a href="He,Jiarui_CV_2026.pdf" download>Download the resume (PDF)</a>
-+  </p>
-+  <iframe src="He,Jiarui_CV_2026.pdf" style="width:100%; height:100%;" frameborder="0"></iframe>
-+</body>
- </html>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f2f5;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 56px;
+      background: #1a1a2e;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+    }
+
+    header .name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    header .name span {
+      color: #7eb3ff;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45em;
+      padding: 0.45em 1.1em;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .download-btn:hover { background: #1d4ed8; }
+
+    .download-btn svg {
+      width: 15px; height: 15px;
+      fill: currentColor;
+    }
+
+    .viewer {
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .viewer iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name">He <span>Jiarui</span> &nbsp;— Resume</div>
+    <a class="download-btn" href="He,Jiarui_CV_2026.pdf" download>
+      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 10.5l-4-4h2.5V2h3v4.5H12L8 10.5zm-5 2v1.5h10V12.5H3z"/>
+      </svg>
+      下载简历 (PDF)
+    </a>
+  </header>
+  <div class="viewer">
+    <iframe src="He,Jiarui_CV_2026.pdf" title="He Jiarui Resume"></iframe>
+  </div>
+</body>
+</html>
